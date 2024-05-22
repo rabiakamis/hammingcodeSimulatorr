@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hamming Code Simulator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:#DBE7C9;
+        }
+        .hamming{
+            background-color: #50623A; 
+            padding: 30px;
+            border-radius: 10px;
+            border: 8px solid rgb(255, 255, 255);
+           
+        }
+    </style>
+</head>
+<body>
+   <div class="hamming">
+    <h1>HAMMING KOD SIMULATORU</h1>
+    <label for="veriGirdisi"> Data Bitlerini Giriniz:</label>
+    <input type="text" id="veriGirdisi">
+    <button onclick="hammingKoduUret()">Hamming Kodunu Oluştur</button>
+    <p id="hammingKoduCikti"></p>
+    <button onclick="hataEkle()">Hata Oluştur</button>
+    <p id="yanlisKodCikti"></p>
+    <button onclick="hataTespitVeDuzelt()">Hatayı Bul Ve Düzelt</button>
+    <p id="duzeltilmisKodCikti"></p>
+   </div>
+
+    <script src="hamming.js"></script>
+</body>
+</html>
